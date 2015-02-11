@@ -4,10 +4,12 @@ users to chat in a group.
 
 ### Technologies
 * ASP.NET MVC 5
-* EF 6
+* Entity Framework 6
 * AutoMapper
 * Twitter Bootstrap
 * Web API
+* SignalR
+* RestSharp
 
 ### Patterns & Practices
 * Repository Pattern & Generic Repository
