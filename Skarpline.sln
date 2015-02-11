@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLayer", "BusinessLayer", "{41ACDF0C-2A62-48FD-9266-407B80FC91FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonLayer", "CommonLayer", "{F3120943-876E-403D-9A35-874C45CD2C0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PersistenceLayer", "PersistenceLayer", "{E4AB3C96-97C2-491E-8091-40B8FFE3EC64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{FEE10F62-06FF-4ECA-9AA5-9918F700EFB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UILayer", "UILayer", "{90391233-29F0-4D9E-BE66-A7F11CEC6A71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skarpline.API", "Skarpline.API\Skarpline.API.csproj", "{F2A69984-95C1-46E4-95E1-804F448AC831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skarpline.Models", "Skarpline.Models\Skarpline.Models.csproj", "{2F8FED30-7A5E-4BD1-B457-2B31EF1D1058}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Skarpline.Web", "http://localhost:54369", "{15BC0F61-1274-44B6-BC7B-FBE8516F5B8C}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{2f8fed30-7a5e-4bd1-b457-2b31ef1d1058}|Skarpline.Models.dll;{2c4de661-b177-4349-971a-ec159fb765d2}|Skarpline.CommonLayer.Unity.dll;{FAED2893-E6C7-44B7-9572-E154B6412415}|Skarpline.BusinessLayer.Service.dll;{9D9D9BCA-E376-474E-8ADA-B7C6FD02C12E}|Skarpline.BusinessLayer.ServiceImpl.dll;{DC554559-7686-4D70-9B88-00AF32B61AED}|Skarpline.CommonLayer.CommonLibrary.dll;{9178224E-EA9C-4210-AC53-B3955764F3A2}|Skarpline.CommonLayer.Mapper.dll;{AE308076-9BAD-4253-B097-7986FCFF6955}|Skarpline.PersistenceLayer.Repository.dll;{9F8128F0-17AC-489B-BF03-1A877CE1926E}|Skarpline.PersistenceLayer.EF.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54369"
+		Debug.AspNetCompiler.PhysicalPath = "Skarpline.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54369\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54369"
+		Release.AspNetCompiler.PhysicalPath = "Skarpline.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54369\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Skarpline.Web\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skarpline.PersistenceLayer.EF", "Skarpline.PersistenceLayer.EF\Skarpline.PersistenceLayer.EF.csproj", "{9F8128F0-17AC-489B-BF03-1A877CE1926E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skarpline.PersistenceLayer.Repository", "Skarpline.PersistenceLayer.Repository\Skarpline.PersistenceLayer.Repository.csproj", "{AE308076-9BAD-4253-B097-7986FCFF6955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skarpline.BusinessLayer.Service", "Skarpline.BusinessLayer.Service\Skarpline.BusinessLayer.Service.csproj", "{FAED2893-E6C7-44B7-9572-E154B6412415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skarpline.BusinessLayer.ServiceImpl", "Skarpline.BusinessLayer.ServiceImpl\Skarpline.BusinessLayer.ServiceImpl.csproj", "{9D9D9BCA-E376-474E-8ADA-B7C6FD02C12E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skarpline.CommonLayer.Mapper", "Skarpline.CommonLayer.Mapper\Skarpline.CommonLayer.Mapper.csproj", "{9178224E-EA9C-4210-AC53-B3955764F3A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skarpline.CommonLayer.Unity", "Skarpline.CommonLayer.Unity\Skarpline.CommonLayer.Unity.csproj", "{2C4DE661-B177-4349-971A-EC159FB765D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skarpline.CommonLayer.CommonLibrary", "Skarpline.CommonLayer.CommonLibrary\Skarpline.CommonLayer.CommonLibrary.csproj", "{DC554559-7686-4D70-9B88-00AF32B61AED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2A69984-95C1-46E4-95E1-804F448AC831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A69984-95C1-46E4-95E1-804F448AC831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A69984-95C1-46E4-95E1-804F448AC831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A69984-95C1-46E4-95E1-804F448AC831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F8FED30-7A5E-4BD1-B457-2B31EF1D1058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F8FED30-7A5E-4BD1-B457-2B31EF1D1058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F8FED30-7A5E-4BD1-B457-2B31EF1D1058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F8FED30-7A5E-4BD1-B457-2B31EF1D1058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15BC0F61-1274-44B6-BC7B-FBE8516F5B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BC0F61-1274-44B6-BC7B-FBE8516F5B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BC0F61-1274-44B6-BC7B-FBE8516F5B8C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BC0F61-1274-44B6-BC7B-FBE8516F5B8C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9F8128F0-17AC-489B-BF03-1A877CE1926E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8128F0-17AC-489B-BF03-1A877CE1926E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8128F0-17AC-489B-BF03-1A877CE1926E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8128F0-17AC-489B-BF03-1A877CE1926E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE308076-9BAD-4253-B097-7986FCFF6955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE308076-9BAD-4253-B097-7986FCFF6955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE308076-9BAD-4253-B097-7986FCFF6955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE308076-9BAD-4253-B097-7986FCFF6955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAED2893-E6C7-44B7-9572-E154B6412415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAED2893-E6C7-44B7-9572-E154B6412415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAED2893-E6C7-44B7-9572-E154B6412415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAED2893-E6C7-44B7-9572-E154B6412415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D9D9BCA-E376-474E-8ADA-B7C6FD02C12E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D9D9BCA-E376-474E-8ADA-B7C6FD02C12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D9D9BCA-E376-474E-8ADA-B7C6FD02C12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D9D9BCA-E376-474E-8ADA-B7C6FD02C12E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9178224E-EA9C-4210-AC53-B3955764F3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9178224E-EA9C-4210-AC53-B3955764F3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9178224E-EA9C-4210-AC53-B3955764F3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9178224E-EA9C-4210-AC53-B3955764F3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4DE661-B177-4349-971A-EC159FB765D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4DE661-B177-4349-971A-EC159FB765D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4DE661-B177-4349-971A-EC159FB765D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4DE661-B177-4349-971A-EC159FB765D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC554559-7686-4D70-9B88-00AF32B61AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC554559-7686-4D70-9B88-00AF32B61AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC554559-7686-4D70-9B88-00AF32B61AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC554559-7686-4D70-9B88-00AF32B61AED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2A69984-95C1-46E4-95E1-804F448AC831} = {FEE10F62-06FF-4ECA-9AA5-9918F700EFB4}
+		{2F8FED30-7A5E-4BD1-B457-2B31EF1D1058} = {FEE10F62-06FF-4ECA-9AA5-9918F700EFB4}
+		{15BC0F61-1274-44B6-BC7B-FBE8516F5B8C} = {90391233-29F0-4D9E-BE66-A7F11CEC6A71}
+		{9F8128F0-17AC-489B-BF03-1A877CE1926E} = {E4AB3C96-97C2-491E-8091-40B8FFE3EC64}
+		{AE308076-9BAD-4253-B097-7986FCFF6955} = {E4AB3C96-97C2-491E-8091-40B8FFE3EC64}
+		{FAED2893-E6C7-44B7-9572-E154B6412415} = {41ACDF0C-2A62-48FD-9266-407B80FC91FE}
+		{9D9D9BCA-E376-474E-8ADA-B7C6FD02C12E} = {41ACDF0C-2A62-48FD-9266-407B80FC91FE}
+		{9178224E-EA9C-4210-AC53-B3955764F3A2} = {F3120943-876E-403D-9A35-874C45CD2C0B}
+		{2C4DE661-B177-4349-971A-EC159FB765D2} = {F3120943-876E-403D-9A35-874C45CD2C0B}
+		{DC554559-7686-4D70-9B88-00AF32B61AED} = {F3120943-876E-403D-9A35-874C45CD2C0B}
+	EndGlobalSection
+EndGlobal

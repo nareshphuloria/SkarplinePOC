@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+WARNING: DO NOT MODIFY this file, it is used for the web publish process.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8bfb340d-b6c7-4870-a95f-c10d7e1254e6}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/Skarpline.Web</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SourceWebProject>http://localhost:54369</SourceWebProject>
+    <SourceWebMetabasePath>/IISExpress/7.5/LM/W3SVC/44/ROOT</SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Skarpline.BusinessLayer.ServiceImpl\Skarpline.BusinessLayer.ServiceImpl.csproj">
+      <Project>{9D9D9BCA-E376-474E-8ADA-B7C6FD02C12E}</Project>
+      <Name>Skarpline.BusinessLayer.ServiceImpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.BusinessLayer.Service\Skarpline.BusinessLayer.Service.csproj">
+      <Project>{FAED2893-E6C7-44B7-9572-E154B6412415}</Project>
+      <Name>Skarpline.BusinessLayer.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.CommonLayer.CommonLibrary\Skarpline.CommonLayer.CommonLibrary.csproj">
+      <Project>{DC554559-7686-4D70-9B88-00AF32B61AED}</Project>
+      <Name>Skarpline.CommonLayer.CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.CommonLayer.Mapper\Skarpline.CommonLayer.Mapper.csproj">
+      <Project>{9178224E-EA9C-4210-AC53-B3955764F3A2}</Project>
+      <Name>Skarpline.CommonLayer.Mapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.CommonLayer.Unity\Skarpline.CommonLayer.Unity.csproj">
+      <Project>{2C4DE661-B177-4349-971A-EC159FB765D2}</Project>
+      <Name>Skarpline.CommonLayer.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.Models\Skarpline.Models.csproj">
+      <Project>{2F8FED30-7A5E-4BD1-B457-2B31EF1D1058}</Project>
+      <Name>Skarpline.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.PersistenceLayer.EF\Skarpline.PersistenceLayer.EF.csproj">
+      <Project>{9F8128F0-17AC-489B-BF03-1A877CE1926E}</Project>
+      <Name>Skarpline.PersistenceLayer.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.PersistenceLayer.Repository\Skarpline.PersistenceLayer.Repository.csproj">
+      <Project>{AE308076-9BAD-4253-B097-7986FCFF6955}</Project>
+      <Name>Skarpline.PersistenceLayer.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

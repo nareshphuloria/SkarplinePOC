@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D9D9BCA-E376-474E-8ADA-B7C6FD02C12E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Skarpline.BusinessLayer.ServiceImpl</RootNamespace>
+    <AssemblyName>Skarpline.BusinessLayer.ServiceImpl</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Message\MessagesServiceImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\UserServiceImpl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Skarpline.BusinessLayer.Service\Skarpline.BusinessLayer.Service.csproj">
+      <Project>{FAED2893-E6C7-44B7-9572-E154B6412415}</Project>
+      <Name>Skarpline.BusinessLayer.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.CommonLayer.CommonLibrary\Skarpline.CommonLayer.CommonLibrary.csproj">
+      <Project>{dc554559-7686-4d70-9b88-00af32b61aed}</Project>
+      <Name>Skarpline.CommonLayer.CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.CommonLayer.Mapper\Skarpline.CommonLayer.Mapper.csproj">
+      <Project>{9178224e-ea9c-4210-ac53-b3955764f3a2}</Project>
+      <Name>Skarpline.CommonLayer.Mapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.Models\Skarpline.Models.csproj">
+      <Project>{2f8fed30-7a5e-4bd1-b457-2b31ef1d1058}</Project>
+      <Name>Skarpline.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Skarpline.PersistenceLayer.Repository\Skarpline.PersistenceLayer.Repository.csproj">
+      <Project>{ae308076-9bad-4253-b097-7986fcff6955}</Project>
+      <Name>Skarpline.PersistenceLayer.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
