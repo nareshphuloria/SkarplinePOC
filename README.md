@@ -15,7 +15,7 @@ Unit of Work
 Dependency Injection
 
 Prerequisites
-1. Restore database script from App_Data folder in SQL Server.
+1. Restore database script from App_Data folder under Skarpline.API. The database to run the script is SQL Server.
 1. Change connection string, in web.config file under Skarpline.API project and web.config file under Skarpline.Web project 
 
 Running the Application
